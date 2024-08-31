@@ -1,48 +1,108 @@
-/* Global rules */
-
+/* Start Global Rules */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
+  }
 
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
+  body {
     font-family: "Work Sans", sans-serif;
-}
+  }
 
-/* End Global Rules */
-
-.parent {
-    background-color: #eee;
-}
-
-.container {
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto;
+  .container {
     padding-left: 15px;
     padding-right: 15px;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+  /* Small */
+  @media (min-width: 768px) {
     .container {
-        width: 750px;
+      width: 750px;
     }
-}
+  }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+  /* Medium */
+  @media (min-width: 992px) {
     .container {
-        width: 970px;
+      width: 970px;
     }
-}
+  }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+  /* Large */
+  @media (min-width: 1200px) {
     .container {
-        width: 1170px;
+      width: 1170px;
     }
-}
+  }
+
+  /* End Global Rules */
+
+
+  /* Start Header */
+
+  .header {
+    padding: 20px;
+  }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header .logo {
+    width: 60px;
+  }
+
+  .header .links {
+    position: relative;
+  }
+
+  .header .links .icon {
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+  }
+
+  .header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+  }
+
+  .header .links .icon span:first-child {
+    width: 100%;
+  }
+
+  .header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+  }
+
+  .header .links .icon span:last-child {
+    width: 100%;
+  }
+
+  .heeader .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;    
+  }
+  .heeader .links ul::before {
+    content: "";
+    
+  }
