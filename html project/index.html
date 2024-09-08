@@ -8,7 +8,6 @@
       content="the official website for The Little Taco Shop"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -16,28 +15,29 @@
   </head>
 
   <body>
-    <header>
-      <h1>Welcome to The little Taco Shop</h1>
+    <header class="header">
+      <h1 class="header__h1">Welcome to The little Taco Shop</h1>
 
-      <nav>
-        <ul>
+      <nav class="header__nav">
+        <ul class="header__ul">
           <li>
-            <a href="#about"
-              >About <abbr title="The Little Taco Shop">LTS</abbr>
-            </a>
+            <a href="#menu">Menu</a>
           </li>
           <li>
-            <a href="#menu">Our Menu</a>
+            <a href="hours.html">Hours</a>
           </li>
           <li>
-            <a href="hours.html">Store Hours</a>
+            <a href="contact.html">Contact</a>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
+    </header>
 
+    <section class="hero">
+      <h2 class="hero__h2">Bienvenidos!</h2>
       <figure>
         <img
           src="img/tacos_and_drink_400x267.png"
@@ -49,9 +49,7 @@
 
         <figcaption>Tacos and a Drink</figcaption>
       </figure>
-    </header>
-
-    <hr />
+    </section>
 
     <main>
       <article id="about">
