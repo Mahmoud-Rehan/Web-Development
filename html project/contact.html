@@ -13,55 +13,71 @@
   </head>
 
   <body>
-    <header>
-      <h1>Contact US</h1>
+    <header class="header">
+      <h1 class="header__h1">Little Taco Shop</h1>
 
-      <nav>
-        <ul>
+      <nav class="header__nav">
+        <ul class="header__ul">
           <li>
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="index.html#about"
-              >About <abbr title="The Little Taco Shop">LTS</abbr>
-            </a>
+            <a href="index.html#menu">Menu</a>
           </li>
           <li>
-            <a href="index.html#menu">Our Menu</a>
+            <a href="hours.html">Hours</a>
           </li>
           <li>
-            <a href="hours.html">Store Hours</a>
+            <a href="about.html">About</a>
           </li>
         </ul>
       </nav>
-
-      <figure>
-        <img
-          src="img/tacos_close_up_400x260.png"
-          alt="the little taco shop tacos"
-          title="Ready to be Eaten Tacos!"
-          width="400"
-          height="260"
-        />
-
-        <figcaption>The Little Taco Shop Delicious Tacos</figcaption>
-      </figure>
     </header>
 
-    <hr />
+    <section class="hero">
+      <figure>
+        <img
+          src="img/tacos_close_up_1000x649.png"
+          alt="the little taco shop tacos"
+          title="Ready to be Eaten Tacos!"
+          width="1000"
+          height="649"
+        />
 
-    <main>
-      <section>
-        <h2>Our Contact Form</h2>
+        <figcaption class="offscreen">
+          The Little Taco Shop Delicious Tacos
+        </figcaption>
+      </figure>
+    </section>
 
-        <form action="https://httpbin.org/get" method="get">
-          <fieldset>
-            <legend>Send Us A Message</legend>
+    <main class="main">
+      <article class="main__article">
+        <h2>Our Location</h2>
 
-            <p>
-              <label for="name">Name:</label>
+        <address>
+          555 Taco Temptation Lane, Suite T <br />
+          Kansas City, Mo 55555-5555
+          <br />
+          <br />
 
+          Phone: <a href="tel:+5555555555">555-555-5555</a>
+        </address>
+      </article>
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+
+        <form
+          action="https://httpbin.org/get"
+          class="contact__form"
+          method="get"
+        >
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us A Message</legend>
+
+            <p class="contact__p">
+              <label class="contact__label" for="name">Name:</label>
               <input
+                class="contact__input"
                 type="text"
                 name="name"
                 id="name"
@@ -69,10 +85,10 @@
               />
             </p>
 
-            <p>
-              <label for="email">Email:</label>
-
+            <p class="contact__p">
+              <label class="contact__label" for="email">Email:</label>
               <input
+                class="contact__input"
                 type="email"
                 name="email"
                 id="email"
@@ -80,12 +96,13 @@
               />
             </p>
 
-            <p>
-              <label for="message">Message:</label>
+            <p class="contact__p">
+              <label class="contact__label" for="message">Message:</label>
 
               <br />
 
               <textarea
+                class="contact__textarea"
                 name="message"
                 id="message"
                 cols="30"
@@ -97,29 +114,19 @@
 
           <br />
 
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button class="contact__button" type="submit">Submit</button>
+          <button class="contact__button" type="reset">Reset</button>
         </form>
-      </section>
-
-      <section>
-        <h2>Our Location</h2>
-
-        <address>
-          555 Taco Temptation Lane, Suite T <br />
-          Kansas City, Mo 55555-5555
-          <br />
-          <br />
-
-          Phone: <a href="tel:+5555555555">555-555-5555</a>
-        </address>
-      </section>
+      </article>
     </main>
 
     <hr />
 
-    <footer>
-      <p>Copyright &copy; The Little Taco Shop</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;</span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
     </footer>
   </body>
 </html>

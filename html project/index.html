@@ -16,7 +16,7 @@
 
   <body>
     <header class="header">
-      <h1 class="header__h1">Welcome to The little Taco Shop</h1>
+      <h1 class="header__h1">Little Taco Shop</h1>
 
       <nav class="header__nav">
         <ul class="header__ul">
@@ -40,55 +40,19 @@
       <h2 class="hero__h2">Bienvenidos!</h2>
       <figure>
         <img
-          src="img/tacos_and_drink_400x267.png"
+          src="img/tacos_and_drink_1000x667.png"
           alt="tacos and drink"
           title="Best Tacos and an amazing drink"
-          width="400"
-          height="267"
+          width="1000"
+          height="667"
         />
 
-        <figcaption>Tacos and a Drink</figcaption>
+        <figcaption class="offscreen">Tacos and a Drink</figcaption>
       </figure>
     </section>
 
-    <main>
-      <article id="about">
-        <h2>About <abbr title="The Little Taco Shop">LTS</abbr></h2>
-
-        <p>
-          <abbr title="The Little Taco Shop">LTS</abbr> was fouded in
-          <time datetime="2022">2022</time>. Our shop was built form a
-          <strong>love of tacos🌮🌮🌮🌮.</strong> We hope our shop adds a unique
-          and interesting place to our little town
-        </p>
-        <aside>
-          <h3>Taco Trivia</h3>
-
-          <details>
-            <summary>
-              When did tacos first appear in the united states ?
-            </summary>
-
-            <p>
-              Jeffrey M. Pilcher, taco historian and professor of history at the
-              University of Minnesota, says the earliest mention of tacos in the
-              United States are in a newspaper from
-              <time datetime="1905">1905</time>. (Source:
-              <cite
-                ><a
-                  href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/"
-                  target="_blank"
-                  >Smithsonian Magazine</a
-                ></cite
-              >)
-            </p>
-          </details>
-        </aside>
-      </article>
-
-      <hr />
-
-      <article id="menu">
+    <main class="main">
+      <article id="menu" class="main__article">
         <h2>Our Menu</h2>
 
         <table>
@@ -154,8 +118,11 @@
 
     <hr />
 
-    <footer>
-      <p>Copyright &copy; The Little Taco Shop</p>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;</span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
     </footer>
   </body>
 </html>
