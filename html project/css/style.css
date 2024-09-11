@@ -246,6 +246,7 @@ a:active {
   border-radius: 15px;
   background-color: var(--highlight-color);
   color: white;
+  font-weight: bold;
 }
 
 /* Footer */
@@ -257,4 +258,77 @@ a:active {
   color: white;
   padding: var(--padding-tb) var(--padding-side);
   text-align: center;
+}
+
+/* Menu */
+
+thead,
+tbody,
+tfoot,
+tr {
+  display: contents;
+}
+
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "hd1 hd2 hd3"
+    "cr cr1 cr1p"
+    "cr cr2 cr2p"
+    "cr cr3 cr3p"
+    "sf sf1 sf1p"
+    "sf sf2 sf2p"
+    "sf sf3 sf3p"
+    "cs cs cs";
+  gap: 0.1em;
+  margin-bottom: 1em;
+}
+
+.menu__cr {
+  grid-area: cr;
+}
+
+.menu__sf {
+  grid-area: sf;
+}
+
+.menu__cs {
+  grid-area: cs;
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
+.menu__cr,
+.menu__sf,
+.menu__cs,
+.menu__header {
+  color: var(--highlight-color);
+  font-weight: bold;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.menu__header,
+.menu__item {
+  width: 100%;
+  padding: 1em;
+  border: medium ridge var(--border-color);
+  border-radius: 15px;
+}
+
+.menu__item {
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (min-width: 576px) {
+  .header__h1::before {
+    content: "🌮 ";
+  }
+
+  .header__h1::after {
+    content: " 🌮";
+  }
 }

@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="icon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js" defer></script>
 
     <title>The Little Taco Shop</title>
   </head>
@@ -52,65 +53,67 @@
     </section>
 
     <main class="main">
-      <article id="menu" class="main__article">
-        <h2>Our Menu</h2>
+      <article id="menu" class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
 
-        <table>
-          <caption>
+        <table class="menu__container">
+          <caption class="offscreen">
             Our Tacos
           </caption>
 
           <thead>
             <tr>
-              <th>Tacos</th>
-              <th scope="col"><abbr title="Quantity">QTY</abbr></th>
-              <th scope="col">Price</th>
+              <th class="menu__header" scope="col">Tacos</th>
+              <th class="menu__header" scope="col">Quantity</th>
+              <th class="menu__header" scope="col">Price</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <th scope="row" rowspan="3">Crunchy</th>
-              <td>1</td>
-              <td>$1.50</td>
+              <th class="menu__item menu__cr" scope="row" rowspan="3">
+                Crunchy
+              </th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$1.50</td>
             </tr>
 
             <tr>
-              <td>2</td>
-              <td>$2.50</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$2.50</td>
             </tr>
 
             <tr>
-              <td>3</td>
-              <td>$3.25</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$3.25</td>
             </tr>
 
             <tr>
-              <th scope="row" rowspan="3">Soft</th>
-              <td>1</td>
-              <td>$2</td>
+              <th class="menu__item menu__sf" scope="row" rowspan="3">Soft</th>
+              <td class="menu__item">1</td>
+              <td class="menu__item">$2</td>
             </tr>
 
             <tr>
-              <td>2</td>
-              <td>$3.50</td>
+              <td class="menu__item">2</td>
+              <td class="menu__item">$3.50</td>
             </tr>
 
             <tr>
-              <td>3</td>
-              <td>$4.50</td>
+              <td class="menu__item">3</td>
+              <td class="menu__item">$4.50</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="3">Chips &amp; Salsa $2</td>
+              <td class="menu__item menu__cs" colspan="3">
+                Chips &amp; Salsa $2
+              </td>
             </tr>
           </tfoot>
         </table>
 
-        <br />
-
-        <p>
+        <p class="center">
           <a href="#">Back to Top</a>
         </p>
       </article>
@@ -120,7 +123,7 @@
 
     <footer class="footer">
       <p>
-        <span class="nowrap">Copyright &copy;</span>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
         <span class="nowrap">The Little Taco Shop</span>
       </p>
     </footer>
