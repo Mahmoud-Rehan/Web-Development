@@ -136,7 +136,7 @@ ul {
 }
 
 .sidebar ul li a span {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
 }
@@ -1632,6 +1632,136 @@ ul {
 }
 
 /* End Widgets Control */
+
+/* Start Backup Manager */
+
+.backup {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.backup h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.backup p {
+  color: var(--grey-color);
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.backup .date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.backup .date input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.backup .date label {
+  font-size: 17px;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.backup .date label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.backup .date label::after {
+  content: "";
+  position: absolute;
+  left: 4.8px;
+  top: 3.5px;
+  transform: scale(0);
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.backup .date input[type="radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+
+.backup .date input[type="radio"]:checked + label::after {
+  transform: scale(1);
+}
+
+.backup .servers {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.backup .servers input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.backup .servers .server {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  width: 90%;
+  border: 1px solid #eee;
+  position: relative;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.backup .servers .server label {
+  margin: 15px;
+  display: block;
+  cursor: pointer;
+}
+
+.backup .servers .server label i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.backup .servers input[type="radio"]:checked + .server {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.backup .servers input[type="radio"]:hover + .server {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+@media (max-width: 767px) {
+  .backup .servers {
+    flex-direction: column;
+  }
+
+  .backup .servers .server {
+    margin-right: 0;
+  }
+}
+
+/* End Backup Manager */
 
 /* ENd Settings */
 
