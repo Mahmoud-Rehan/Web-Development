@@ -2566,6 +2566,15 @@ ul {
   margin: 20px;
 }
 
+@media (max-width: 767px) {
+  .plans-page {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    gap: 10px;
+    margin: 10px;
+  }
+}
+
 .plan {
   background-color: white;
   padding: 20px;
