@@ -2643,6 +2643,7 @@ ul {
 
 .plan ul li .yes {
   color: var(--green-color);
+  font-size: 18px;
 }
 
 .plan ul li i:not(.yes, .help) {
@@ -2652,6 +2653,7 @@ ul {
 .plan ul li .help {
   color: var(--grey-color);
   margin-left: auto;
+  cursor: pointer;
 }
 
 .plan > a {
